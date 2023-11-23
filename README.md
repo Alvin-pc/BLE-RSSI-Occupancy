@@ -6,5 +6,6 @@ Steps:
 2.  The values are stored in 'ROUND_1.txt' manually (Check file for format).In each Round n, the values of all the zones{6} are stored sequentially. This is how 'Train_setup.py' uses it to generate the 'BLE.Keras' file.
 3.  After training is done, in deployment use just the 'Test_setup.py' with the generated 'BLE.Keras' file.
 
-Note: pip packages like Tensorflow, Keras etc needs to be installed on the host agent to process the RSSI values and generate zone.
-Note: The Keras model can work accross devices without additional training, but the Keras binaries may not be OS portable. To run on Linux or Mac, retrain the model and you are good to go.
+Note1: pip packages like Tensorflow, Keras etc needs to be installed on the host agent to process the RSSI values and generate zone.
+
+Note2: The Keras model can work accross devices without additional training, but the Keras binaries may not be OS portable. To run on Linux or Mac, retrain the model and you are good to go.
