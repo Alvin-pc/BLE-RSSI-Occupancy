@@ -8,7 +8,7 @@ import numpy as np
 
 zones = 0
 input_data = []
-with open('ROUND_1.txt', 'r') as file:
+with open('ROUND.txt', 'r') as file:
   line = file.readline()
   while(line):
     if(line.find("{") != -1):
