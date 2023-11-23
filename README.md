@@ -3,7 +3,7 @@ Use BLE beacons(transmitters) -{4 beacons in our case}, to identify the region o
 
 Steps:
 1.  Run the file 'data_collection.py' to print the Mean RSSI-{100 samples in our case} at a point and annotate manually.
-2.  The values are stored in 'ROUND_1.txt' manually (Check file for format).In each Round n, the values of all the zones{6} are stored sequentially. This is how 'Train_setup.py' uses it to generate the 'BLE.Keras' file.
+2.  The values are stored in 'ROUND.txt' manually (Check file for format) for n rounds {10 Rounds in our case}.In each Round n, the values of all the zones{6} are stored sequentially. This is how 'Train_setup.py' uses it to generate the 'BLE.Keras' file.
 3.  After training is done, in deployment use just the 'Test_setup.py' with the generated 'BLE.Keras' file.
 
 Note1: pip packages like Tensorflow, Keras etc needs to be installed on the host agent to process the RSSI values and generate zone.
